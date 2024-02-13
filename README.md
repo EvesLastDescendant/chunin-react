@@ -37,4 +37,4 @@ If you want to contribute to this repo, you are welcome to do so. Please follow 
 
 # License
 
-This repo is licensed under the GNU GPL-3.0 License. See the [[LICENSE](https://github.com/EvesLastDescendant/chunin-react/tree/main#)] file for more details.
+This repo is licensed under the GNU GPL-3.0 License. See the [[LICENSE](https://github.com/EvesLastDescendant/chunin-react/blob/main/LICENSE)] file for more details.
