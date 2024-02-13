@@ -1,4 +1,4 @@
-# 8THchunin-React-Practice-Projects
+# 8thchunin React-Practice-Projects
 
 This repo contains a collection of practice projects that I created to learn and improve my skills in React, a popular JavaScript library for building user interfaces.
 
