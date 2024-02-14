@@ -11,20 +11,20 @@ const messages = [
 ]
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)// update repo file
+  const [isOpen, setIsOpen] = useState(false)
 
   function openComponent() {
-      setIsOpen((s) => !s)// update repo file
+      setIsOpen((s) => !s)
   }
 
   const [step, setStep] = useState(1)
 
   function nextStep() {
-    if (step < 3) setStep((s) => s + 1)// update repo file
+    if (step < 3) setStep((s) => s + 1)
   }
 
   function prevStep() {
-    if (step > 1) setStep((s) => s - 1)// update repo file
+    if (step > 1) setStep((s) => s - 1)
   }
 
   return (
