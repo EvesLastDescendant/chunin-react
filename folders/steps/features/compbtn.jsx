@@ -8,9 +8,9 @@ function ComponentButton(props) {
         <>
             <div style={{display: 'flex', justifyContent: 'flex-end', padding: '10px 15px 0 0'}}>
                 {props.isOpen ? 
-                    (<button onClick={props.buttonClick} className="showbutton"><FontAwesomeIcon icon={faCircle} /></button>)
+                    (<button onClick={props.buttonClick} className="showbutton"><FontAwesomeIcon icon={faClose} /></button>)// update repo file
                     :
-                    (<button onClick={props.buttonClick} className="showbutton"><FontAwesomeIcon icon={faClose} /></button>)
+                    (<button onClick={props.buttonClick} className="showbutton"><FontAwesomeIcon icon={faCircle} /></button>)// update repo file
                 }
             </div>
         </>
