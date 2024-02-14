@@ -11,20 +11,20 @@ const messages = [
 ]
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)// update repo file
 
   function openComponent() {
-      setIsOpen(!isOpen)
+      setIsOpen((s) => !s)// update repo file
   }
 
   const [step, setStep] = useState(1)
 
   function nextStep() {
-    if (step < 3) setStep(step + 1)
+    if (step < 3) setStep((s) => s + 1)// update repo file
   }
 
   function prevStep() {
-    if (step > 1) setStep(step - 1)
+    if (step > 1) setStep((s) => s - 1)// update repo file
   }
 
   return (
@@ -33,7 +33,7 @@ function App() {
         isOpen={isOpen}
         buttonClick={openComponent}
       />
-      {!isOpen && <div className='steps'>
+      {isOpen && <div className='steps'>
         <div className='numbers'>
           <div className={step >= 1 ? 'active' : ''}>1</div>
           <div className={step >= 2 ? 'active' : ''}>2</div>
