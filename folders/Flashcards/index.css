@@ -1,1 +1,9 @@
+* {
+  user-select: none;
+}
 
+body {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
