@@ -1,0 +1,31 @@
+.steps, .counts, .msg {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.steps, .counts {
+    gap: 0.5em;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.reset-button {
+    display: grid;
+    place-items: center;
+}
+
+
