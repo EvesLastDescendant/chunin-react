@@ -1,0 +1,74 @@
+.app {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.add-form {
+    background-color: #e5771f;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.add-form button {
+    text-transform: uppercase;
+    background-color: #76c7ad;
+}
+
+.list {
+    background-color: #5a3e2b;
+    color: #ffebb3;
+    padding: 4rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.actions button,
+.list select {
+    text-transform: uppercase;
+    padding: 0.8rem 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0.8rem;
+}
+
+.list ul {
+    list-style: none;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    align-content: start;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list li button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    transform: translateY(-1px);
+}
+
+.stats {
+    background-color: #76c7ad;
+    text-align: center;
+    font-weight: 500;
+    padding: 2.2rem 0;
+}
