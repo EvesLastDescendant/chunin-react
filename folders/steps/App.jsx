@@ -41,8 +41,8 @@ const App = () => {
         </div>
         <Message msg={`Step ${step}: ${messages[step - 1]}`}/>
         <div className='buttons'>
-          <StepButton buttontext={"Previous"} clickfunc={prevStep} />
-          <StepButton buttontext={"Next"} clickfunc={nextStep} />
+          <StepButton buttontext={"👈Previous"} clickfunc={prevStep} />
+          <StepButton buttontext={"Next👉"} clickfunc={nextStep} />
         </div>
       </div>}
     </>
