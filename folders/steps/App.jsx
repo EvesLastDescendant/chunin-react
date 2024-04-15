@@ -2,7 +2,7 @@ import './App.css'
 import Message from './components/message'
 import ComponentButton from './feature/compbtn'
 import { useState } from 'react'
-import { PreviousButton, NextButton } from './components/stepbutton';
+import { StepButton } from './components/stepbutton';
 
 const messages = [
   "Learn React ⚛️",
@@ -10,7 +10,7 @@ const messages = [
   "Invest your new income 🤑",
 ]
 
-function App() {
+const App = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   function openComponent() {
@@ -41,8 +41,8 @@ function App() {
         </div>
         <Message msg={`Step ${step}: ${messages[step - 1]}`}/>
         <div className='buttons'>
-          <PreviousButton buttontext={`Previous`} clickfunc={prevStep}/>
-          <NextButton buttontext={`Next`} clickfunc={nextStep}/>
+          <StepButton buttontext={"Previous"} clickfunc={prevStep} />
+          <StepButton buttontext={"Next"} clickfunc={nextStep} />
         </div>
       </div>}
     </>
