@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-// import GetPercent from "./components/percentage"
 import GetBill from "./components/inputBill"
 import Reset from "./components/resetbutton"
 import TotalBill from "./components/totalBill"
