@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
 // import GetPercent from "./components/percentage"
-import GetInput from "./components/priceinput"
+import GetBill from "./components/billinput"
 import Reset from "./components/resetbutton"
-import TotalAmt from "./components/totalprice"
+import TotalBill from "./components/totalBill"
 import GetCustomerTip from "./components/cusTip"
-import GetFriendTip from "./components/cusFrTip"
 
 const App = () => {
 
@@ -19,14 +18,6 @@ const App = () => {
 
   function inputChange(e) {
     setAmount(Number(e.target.value))
-  }
-
-  function handleSelectOne (e) {
-    setPercOne(Number(e.target.value))
-  }
-
-  function handleSelectTwo(e) {
-    setPercTwo(Number(e.target.value))
   }
 
   function aveTip (t1, t2) {
@@ -46,10 +37,10 @@ const App = () => {
       <div className="container">
         <h1>Tip calculator</h1>
         <div className="info">
-          <div><GetInput amount={amount} inputChange={inputChange} /></div>
-          <div><GetCustomerTip percOne={percOne} onchange={handleSelectOne}>How did you like the service ? </GetCustomerTip></div>
-          <div><GetFriendTip percTwo={percTwo} onchange={handleSelectTwo}>How did your friend like the service ? </GetFriendTip></div>
-          <div><TotalAmt tip={tip} amount={amount} /></div>
+          <div><GetBill amount={amount} inputChange={inputChange} /></div>
+          <div><GetCustomerTip percentage={percOne} onSelect={setPercOne}>How did you like the service ? </GetCustomerTip></div>
+          <div><GetCustomerTip percentage={percTwo} onSelect={setPercTwo}>How did your friend like the service ? </GetCustomerTip></div>
+          <div><TotalBill tip={tip} amount={amount} /></div>
           <div><Reset onclick={cleanSlate} /></div>
         </div>
       </div>
