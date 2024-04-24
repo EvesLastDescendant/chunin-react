@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-function GetCustomerTip(props) {
+function GetFriendTip(props) {
     return (
         <>
             <label>
                 <span>{props.children}</span>
-                <select value={props.percOne} name="select" onChange={props.onchange}>
+                <select value={props.percTwo} name="select" onChange={props.onchange}>
                     <option value={0}>Dissatisfied (0%)</option>
                     <option value={5}>It was okay (5%)</option>
                     <option value={10}>It was good (10%)</option>
@@ -15,4 +15,4 @@ function GetCustomerTip(props) {
     )
 }
 
-export default GetCustomerTip
+export default GetFriendTip
