@@ -3,7 +3,7 @@ const AccordionItem = (props) => {
     const isOpen = props.num === props.accordionCurrentlyOpen
 
     function handleToggle() {
-        props.onOpen(props.num)
+        props.onOpen(isOpen ? null : props.num)
     }
     return (
         <>
