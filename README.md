@@ -14,6 +14,7 @@ To run any of the projects, you need to have Node.js and npm installed on your m
 
 Each project is a folder containing necessary files. All you have to do is download the files from a folder.
 You can make your own changes as you wish. Before downloading, make sure you have set up your vite.
+Some of projects have extra dependency files so do well to check the files to know which dependencies to install.
 
 # Usage
 
