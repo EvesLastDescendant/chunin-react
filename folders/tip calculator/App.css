@@ -30,6 +30,8 @@ input, select {
     padding: 5px 2px;
     border: 1px solid;
     border-radius: 5px;
+    width: 90%;
+    font-weight: 500;
 }
 
 :is(input, select):focus {
@@ -46,4 +48,10 @@ button {
     border: 1px solid;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }
