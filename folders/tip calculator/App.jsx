@@ -41,6 +41,12 @@ const App = () => {
           <div><GetCustomerTip percentage={percTwo} onSelect={setPercTwo}>How did your friend like the service ? </GetCustomerTip></div>
           <div><TotalBill tip={tip} amount={amount} /></div>
           <div><Reset onclick={cleanSlate} /></div>
+          {
+            /*
+            * challenge:
+            * display totalbill and reset button when the bill input is filled 
+            */
+          }
         </div>
       </div>
     </>
